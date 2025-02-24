@@ -105,7 +105,7 @@ func TestGetViewsLast24hr(t *testing.T) {
 
 	sum := db.GetViewsLast24hr()
 	if sum != 48 {
-		t.Errorf("Expected 4 views, got %d", sum)
+		t.Errorf("Expected 48 views, got %d", sum)
 	}
 }
 

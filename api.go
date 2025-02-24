@@ -139,9 +139,6 @@ func (db *PsuedoDB) MovingAverageViewsByQuery(duration int, key string, val bool
 			} else {
 				queried_views[i] = db.views[len(db.views)-2-i].events - data
 			}
-		} else if db.views[len(db.views)-2-i].events > 0 {
-			slog.Error("key not found in data", "key", key)
-			return nil
 		}
 	}
 
